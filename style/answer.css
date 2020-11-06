@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'NotoSansJP-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(NotoSansJP-Regular.woff) format('woff');
+}
+
+body {
+  text-align: center;
+  font-family: "NotoSansJP-Regular", sans-serif;
+}
+
+.container{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+  width: 80%;
+  padding: 20px;
+}
+
+h1{
+  margin:0 0;
+  color:Gray;
+}
+
+.attr {
+  display: inline-block;
+  width:100px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.question {
+  display: inline-block;
+  width:150px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+img {
+  width: 300px;
+}
+
+/*　attribute　*/
+.container ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  text-align: center;
+}
+ul li{
+  text-align: center;
+  color: #AAAAAA;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 55px;
+  border-bottom: 1px solid #333;
+}
+ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+ul li label{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+  padding: 20px 25px 15px 60px;
+  margin: 0px auto;
+  height: 15px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+ul li:hover label{
+  color: black;
+}
+ul li .check{
+  display: block;
+  position: absolute;
+  border: 5px solid #AAAAAA;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+ul li:hover .check {
+  border: 5px solid black;
+}
+ul li .check::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: -2px;
+  left: -2px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+input[type=radio]:checked ~ .check {
+  border: 5px solid #67c5ff;
+}
+input[type=radio]:checked ~ .check::before{
+  background: #67c5ff;
+}
+input[type=radio]:checked ~ label{
+  color: #67c5ff;
+}
+
+/*　submit　*/
+.btn-flat-border-save {
+  display: inline-block;
+  width: 25%;
+  height: 50px;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #AAAAAA;
+  border: solid 2px #AAAAAA;
+  border-radius: 3px;
+  transition: .4s;
+  font-size:15px;
+  margin: 0px 0;
+}
+.btn-flat-border-save:hover {
+  background: #AAAAAA;
+  color: white;
+}
+.btn-flat-border-next {
+  display: inline-block;
+  width: 25%;
+  height: 50px;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  font-size:15px;
+  margin: 0px 0;
+}
+.btn-flat-border-next:hover {
+  background: #67c5ff;
+  color: white;
+}

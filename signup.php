@@ -16,7 +16,10 @@ try {
 }
 
 if ($data->num_rows) {
-	setcookie("userId", (int)$data->fetch_all()[0][0], time()+60*60*24);
+	$user_data = $data->fetch_assoc();
+	setcookie("userId", (int)$user_data["id"], time()+60*60*24);
+	setcookie("start", (int)$user_data["start"], time()+60*60*24);
+	setcookie("end", (int)$user_data["end"], time()+60*60*24);
 	header("Location: ./start.php");
 	exit;
 } else {

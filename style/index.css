@@ -19,14 +19,13 @@ h1{
 h4{
 	font-weight:lighter;
 	font-size:15px;
-	margin-bottom:50px;
+	margin-bottom:30px;
 }
 
 h3{
   color:Gray;
   font-weight:lighter;
   font-size:15px;
-  margin-bottom:50px;
 }
 
 /* tab */
@@ -131,6 +130,9 @@ h3{
 tbody {
   border: 1px solid gray;
 }
+table {
+  margin-bottom:30px;
+}
 table , td, th {
   padding: 3px;
   display: inline-block;
@@ -139,7 +141,7 @@ table , td, th {
 }
 td, th {
   text-align: center;
-  width: 80px;
+  width: 100px;
   height: 20px;
 }
 th {
