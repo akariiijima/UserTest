@@ -17,13 +17,13 @@
 	印象評価5段階5項目<br>
 	<table>
 		<tbody>
-			<tr><td></td><td></td><td></td><td></td><td></td></tr>
-			<tr><td></td><td>シンプル</td><td>⇄</td><td>ゴージャス</td><td></td></tr>
-			<tr><td></td><td>モダン</td><td>⇄</td><td>クラシック</td><td></td></tr>
-			<tr><td></td><td>鈍い</td><td>⇄</td><td>鮮やか</td><td></td></tr>
-			<tr><td></td><td>男性的</td><td>⇄</td><td>女性的</td><td></td></tr>
-			<tr><td></td><td>フォーマル</td><td>⇄</td><td>カジュアル</td><td></td></tr>
-			<tr><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td>「色彩」</td><td style="width:150px;">暗い/鈍い</td><td>⇄</td><td style="width:150px;">明るい/鮮やか</td><td></td></tr>
+			<tr><td></td><td>「立体感」</td><td style="width:150px;">平面的/フィット</td><td>⇄</td><td style="width:150px;">立体的/ルーズ</td><td></td></tr>
+			<tr><td></td><td>「正統性」</td><td style="width:150px;">高級/フォーマル</td><td>⇄</td><td style="width:150px;">質素/カジュアル</td><td></td></tr>
+			<tr><td></td><td>「穏健性」</td><td style="width:150px;">無個性/自然</td><td>⇄</td><td style="width:150px;">個性的/不自然</td><td></td></tr>
+			<tr><td></td><td>「装飾性」</td><td style="width:150px;">地味/シンプル</td><td>⇄</td><td style="width:150px;">派手/ゴージャス</td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 		</tbody>
 	</table>
 	<h3>

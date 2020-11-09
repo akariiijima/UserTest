@@ -27,7 +27,7 @@ h1{
 
 .attr {
   display: inline-block;
-  width:100px;
+  width:150px;
   margin: 0 10px;
   text-align: center;
 }
@@ -46,10 +46,13 @@ img {
 /*　attribute　*/
 .container ul{
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   overflow: auto;
   text-align: center;
+}
+ul {
+  width:800px;
 }
 ul li{
   text-align: center;
