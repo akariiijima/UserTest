@@ -2,3 +2,4 @@ images/
 .DS_Store
 sftp-config.json
 .ipynb_checkpoints/
+bg_rm.ipynb
