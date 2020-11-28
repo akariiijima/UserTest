@@ -19,7 +19,7 @@
 	$username = $data->fetch_assoc()["username"];
 	$data = mysqli_query($db_link, "SELECT count(*) as count FROM logs WHERE user_id='$user_id'");
 	$count = $data->fetch_assoc()["count"];
-	$data = mysqli_query($db_link, "SELECT user_id, username, count(*) AS `count` FROM `logs`AS L LEFT OUTER JOIN users AS U ON U.id = L.user_id GROUP BY L.user_id ORDER BY `count` DESC LIMIT 10");
+	$data = mysqli_query($db_link, "SELECT user_id, username, count(*) AS `count` FROM `logs`AS L LEFT OUTER JOIN users AS U ON U.id = L.user_id GROUP BY L.user_id ORDER BY `count` DESC");
 	$ranking = [];
 	while ($row = $data->fetch_assoc()){
 	    $ranking[] = [$row["username"], $row["count"]];
@@ -34,7 +34,7 @@
 		<tbody>
 			<tr><td></td><td></td><td></td><td></td><td></td></tr>
 			<?php for ($i = 1; $i <= count($ranking); $i++) { ?>
-				<tr><td><?php echo $i; ?>位</td><td><?php echo $ranking[$i-1][0]; ?></td><td></td><td></td><td><?php echo $ranking[$i-1][1]; ?></td></tr>
+				<tr><td><?php if ($ranking[$i-1][1]==500) { echo 1; } else { echo $i; } ?>位</td><td><?php echo $ranking[$i-1][0]; ?></td><td></td><td></td><td><?php echo $ranking[$i-1][1]; ?></td></tr>
 			<?php } ?>
 			<tr><td></td><td></td><td></td><td></td><td></td></tr>
 		</tbody>
