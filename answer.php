@@ -23,7 +23,7 @@
 	while ($row = $data->fetch_assoc()){
 	    $image_num[] = (int)$row["image_num"];
 	}
-	if (count($image_num) == 500) {
+	if (count($image_num) >= 500) {
 		header( "Location: ./finish.php" );
 		exit;
 	}
