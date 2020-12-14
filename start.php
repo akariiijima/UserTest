@@ -1,14 +1,14 @@
-<head>
-  <title>User Test</title>
-  <link rel="stylesheet" href="style/index.css">
-</head>
-<body>
 <?php
 	if (!$_COOKIE["userId"]) {
 		header( "Location: ./index.php" );
 		exit;
 	}
 ?>
+<head>
+  <title>User Test</title>
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
 	<h1>ご協力ありがとうございます。</h1>
 	<h3>
 		これからファッション画像について<br>

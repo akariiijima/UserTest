@@ -1,8 +1,3 @@
-<head>
-  <title>User Test</title>
-  <link rel="stylesheet" href="style/index.css">
-</head>
-<body>
 <?php
 	$user_id = $_COOKIE["userId"];
 	if (!$user_id) {
@@ -25,6 +20,11 @@
 	    $ranking[] = [$row["username"], $row["count"]];
 	}
 ?>
+<head>
+  <title>User Test</title>
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
 	<h1>ご回答ありがとうございました。</h1>
 	<h4>
 		<?php echo $username; ?>さんの総回答数は<?php echo $count; ?>です。

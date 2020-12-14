@@ -1,8 +1,3 @@
-<head>
-  <title>User Test</title>
-  <link rel="stylesheet" href="style/answer.css">
-</head>
-<body>
 <?php
 	$user_id = $_COOKIE["userId"];
 	$start = $_COOKIE["start"];
@@ -37,6 +32,11 @@
 	$scale = 5;
 	$time_start = microtime(true);
 ?>
+<head>
+  <title>User Test</title>
+  <link rel="stylesheet" href="style/answer.css">
+</head>
+<body>
 	<h1><?php echo count($filter); ?> / 500</h1>
 	<form action="save.php" method="post">
 		<div class="container">
