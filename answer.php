@@ -15,8 +15,14 @@
 
 	$data = mysqli_query($db_link, "SELECT image_num FROM logs WHERE user_id='$user_id'");
 	$image_num = [];
+	$sum_count = 0;
 	while ($row = $data->fetch_assoc()){
-	    $image_num[] = (int)$row["image_num"];
+		if ($start > 1000 && (int)$row["image_num"] < 1001) {
+			$sum_count = 1000;
+		} else {
+			$sum_count = 0;
+		}
+	    $image_num[] = (int)$row["image_num"] + $sum_count;
 	}
 	if (count($image_num) >= 500) {
 		header( "Location: ./finish.php" );

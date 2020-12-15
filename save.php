@@ -10,7 +10,7 @@ try {
 	mysqli_select_db($db_link, $_SERVER['DB_NAME']);
 	$user_id = $_POST['user_id'];
 	$image = $_POST['image'];
-	$image_num = (int)mb_substr($image, 8, 4);;
+	$image_num = (int)mb_substr($image, 7, 4);
 	$attr_1 = (int)$_POST['attr_1'];
 	$attr_2 = (int)$_POST['attr_2'];
 	$attr_3 = (int)$_POST['attr_3'];
