@@ -49,7 +49,7 @@
 	</h3>
 	[ テスト環境を以下のように設定してから開始してください ]<br>
 	<div style="text-align:left;margin-left:35%;color:red">・自分のPCを使用<br>
-	・ブラウザはChromeを使用<br>
+	・ブラウザはChromeを使用(シークレットモードは使用不可)<br>
 	・目が疲れない程度の明るさに設定してユーザーテスト中は変更しない<br></div>
 	<form action="answer.php" method="post">
 		<input type="submit" value="スタート" class="btn-flat-border">
